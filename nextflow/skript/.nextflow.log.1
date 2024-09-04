@@ -1,0 +1,58 @@
+Sep-04 14:32:30.580 [main] DEBUG nextflow.cli.Launcher - $> nextflow run firstscript.nf
+Sep-04 14:32:30.862 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Sep-04 14:32:30.999 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/past/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Sep-04 14:32:31.037 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-04 14:32:31.041 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-04 14:32:31.053 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-04 14:32:31.146 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-04 14:32:31.422 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-04 14:32:31.486 [main] DEBUG nextflow.cli.CmdRun - Launching `firstscript.nf` [infallible_coulomb] DSL2 - revision: a534f2b849
+Sep-04 14:32:31.493 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-04 14:32:31.494 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-04 14:32:31.698 [main] DEBUG nextflow.Session - Session UUID: fe2d1e90-7177-4fdf-bca8-e69e46e37cb1
+Sep-04 14:32:31.699 [main] DEBUG nextflow.Session - Run name: infallible_coulomb
+Sep-04 14:32:31.701 [main] DEBUG nextflow.Session - Executor pool size: 4
+Sep-04 14:32:31.729 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-04 14:32:31.752 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-04 14:32:31.816 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (09:05 CEST)
+  System: Linux 4.4.0-19041-Microsoft
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Ubuntu-1ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 37@DESKTOP-E2VM37G [127.0.1.1]
+  CPUs: 4 - Mem: 7.9 GB (2.1 GB) - Swap: 24 GB (23.2 GB)
+Sep-04 14:32:31.892 [main] DEBUG nextflow.Session - Work-dir: /home/past/Nextflow/skript/work [wslfs]
+Sep-04 14:32:31.893 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/past/Nextflow/skript/bin
+Sep-04 14:32:31.925 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-04 14:32:31.954 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-04 14:32:32.040 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-04 14:32:32.110 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Sep-04 14:32:32.500 [main] DEBUG nextflow.Session - Session start
+Sep-04 14:32:34.058 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-04 14:32:34.107 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/past/.nextflow/secrets/store.json
+Sep-04 14:32:34.132 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@d3f4505] - activable => nextflow.secret.LocalSecretsProvider@d3f4505
+Sep-04 14:32:34.286 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-04 14:32:34.287 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-04 14:32:34.304 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-04 14:32:34.324 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.9 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Sep-04 14:32:34.331 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-04 14:32:34.794 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: downloadFile
+Sep-04 14:32:34.795 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Sep-04 14:32:34.798 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > downloadFile
+Sep-04 14:32:34.807 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_bf16b8d92827535f: /home/past/Nextflow/skript/firstscript.nf
+Sep-04 14:32:34.807 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-04 14:32:34.807 [main] DEBUG nextflow.Session - Session await
+Sep-04 14:32:35.595 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-04 14:32:35.603 [Task submitter] INFO  nextflow.Session - [83/ae3da3] Submitted process > downloadFile
+Sep-04 14:32:39.217 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: downloadFile; status: COMPLETED; exit: 0; error: -; workDir: /home/past/Nextflow/skript/work/83/ae3da3311b4334dea4596d39c26b70]
+Sep-04 14:32:39.219 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-04 14:32:39.310 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-04 14:32:39.413 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-04 14:32:39.420 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-04 14:32:39.429 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Sep-04 14:32:39.457 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=3.6s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Sep-04 14:32:39.723 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-04 14:32:39.783 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-04 14:32:39.783 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
