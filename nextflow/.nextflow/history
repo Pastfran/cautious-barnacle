@@ -1,1 +1,9 @@
 2024-09-04 11:52:41	3s	magical_woese	OK	afff16a9b45c8e8a4f5a3743780ac13a541762f8	c54622c2-eaf2-48d1-b90f-cc7ea216809c	nextflow run hello
+2024-09-05 09:34:37	-	pensive_lalande	-	6dfd025a18539d1e61a30f94f4b15a15	7c6f1e9e-ea97-4e36-be84-293ab5cd6e2c	nextflow run firstscript.nf
+2024-09-05 09:35:49	15.9s	backstabbing_mccarthy	OK	99d587956f886c8ee6ad52f4534afa37	503e25a0-0a5f-4596-90ca-2f82caa0b03b	nextflow run firstscript.nf
+2024-09-05 09:39:28	-	golden_franklin	-	348125fa4b1cb216b27f8bbbf9bb40ed	ff5b8c3d-49a9-46ea-9a83-fc5ae298e0cf	nextflow run firstscript.nf
+2024-09-05 09:40:07	-	kickass_poisson	-	dd966e724418ad574077785aa7e6dd38	8eabf2bb-a1cf-43e2-91c0-ce88bb9a3f3f	nextflow run firstscript.nf
+2024-09-05 09:40:51	6.2s	cheeky_mestorf	ERR	c7898817ad1e0d2d4d981cb8fe420183	d030bb33-6fad-48fb-8f0e-9d41c3e1526c	nextflow run firstscript.nf
+2024-09-05 09:43:49	5.3s	mighty_lavoisier	ERR	e9bee4a9cfb45d249d99d2321364ddb8	c7db664a-1b77-4da2-9ded-6d5d16f55c62	nextflow run firstscript.nf
+2024-09-05 09:49:13	15s	condescending_legentil	OK	a9d1eb62a18a012e6549795349304f7b	9c5b85b8-5853-4289-bd00-6a9057cfdf0a	nextflow run firstscript.nf
+2024-09-05 09:52:16	10.2s	desperate_torvalds	OK	c24c0ace0e70331c098c2ceef22ee564	33bcb603-2720-46c7-a122-4646475a5435	nextflow run firstscript.nf
