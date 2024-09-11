@@ -1,7 +1,7 @@
 nextflow.enable.dsl = 2 
 
 params.storeDir = "${launchDir}/store"
-params.accession = "SRR16641606"
+params.accession = null
 params.out = "$launchDir/output4"
 
 process downloadSRA {
@@ -51,6 +51,9 @@ process basicStats {
 }
 
 workflow {
+	if (!params.accession) {
+    error "No accession number provided. Use --accession parameter to specify it."
+    }
 	a = downloadSRA(Channel.from(params.accession)) | convertFastq | basicStats
 }
 
