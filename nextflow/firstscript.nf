@@ -1,7 +1,9 @@
 nextflow.enable.dsl=2
 
+params.out = "$launchDir/output"
+
 process downloadFile{
-	publishDir "/home/past/cautious-barnacle/nextflow", mode: 'copy', overwrite: true 
+	publishDir params.out, mode: 'copy', overwrite: true 
 	
 	output: 
 		path "batch1.fasta"
@@ -12,14 +14,16 @@ process downloadFile{
 }
 
 process countSequences {
-	publishDir "/home/past/cautious-barnacle/nextflow", mode: 'copy', overwrite: true
-	output: path "numseqs.txt"	
+	publishDir params.out, mode: 'copy', overwrite: true
+	input:
+		path infile 
+	output: 
+		path "numseqs.txt"	
 	"""
-	grep "^>" batch1.fasta | wc -l > numseqs.txt
+	grep "^>" $infile | wc -l > numseqs.txt
 	"""
 }
 
 workflow {
-	downloadFile()
-	countSequences()
+downloadFile | countSequences 
 }
